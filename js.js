@@ -8,5 +8,10 @@ buttonOne.addEventListener('click',function(){
     }
     else if(isNaN(inputOne.value)){
         console.log("Enter Number")
+    }else if(!(inputOne.value <=10 && inputOne.value >0)){
+        console.log('please Enter a number 1 to 10')
+    }
+    else{
+        console.log('Ok')
     }
 })
