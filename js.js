@@ -56,13 +56,15 @@ buttonTwo.addEventListener('click', function () {
             count--;
             chance.innerHTML = `Chance : ${count}`;
             if (inputOne.value == inputTwo.value) {
-                console.log('plear two winer')
+                headingTwo.innerHTML='plear two winer';
+                buttonTwo.style.display= 'none';
             }
         }
         else{
             count =0;
             chance.innerHTML = `Chance : ${count}`;
-            console.log('plear one winer')
+            headingTwo.innerHTML='plear one winer';
+            buttonTwo.style.display= 'none';
         }
 
     }
