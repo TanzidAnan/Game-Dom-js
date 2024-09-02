@@ -8,6 +8,8 @@ let headingTwo =document.querySelector('.headingtwo')
 let inputTwo =document.querySelector('.inputtwo')
 let buttonTwo =document.querySelector('.buttontwo');
 let error1 = document.querySelector('.error1')
+let chance = document.querySelector('.chance');
+let count =5
 
 
 
@@ -30,6 +32,7 @@ buttonOne.addEventListener('click',function(){
         inputTwo.style.display ='inline-block';
         buttonTwo.style.display ='inline-block';
         error1.style.display ='block';
+        chance.innerHTML =`Chance : ${chance}`
 
 
         headingOne.style.display ='none';
@@ -47,5 +50,10 @@ buttonTwo.addEventListener('click',function(){
 
     }else if(!(inputTwo.value <=10 && inputTwo.value >0)){
         error.innerHTML='please Enter a number 1 to 10';
+    }
+    else{
+        if(inputOne.value ==inputTwo.value){
+            console.log(654654)
+        }
     }
 })
