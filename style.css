@@ -10,3 +10,18 @@
 .error1{
     display: none;
 }
+.div-one{
+    width: 550px;
+    height: 60vh;
+    background-color: brown;
+    text-align: center;
+    margin: auto;
+}
+.div-two{
+    width: 550px;
+    height: 60vh;
+    background-color: brown;
+    text-align: center;
+    margin: auto;
+    display: none;
+}
